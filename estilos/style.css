@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li{
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+/* NAVEGADOR - MENU */
+nav{
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+}
+
+.navBar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "logo menu";
+    }
+
+    .gridLogoNav{
+    grid-area: logo;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    }
+
+    .gridNavBar{
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.logoNav{
+    width: 100px;
+    padding-bottom: 10px;
+}
+
+/* MAIN - INDEX */
+main{
+    min-height: 100vh;
+}
+
+body{
+    background-image: url(../img/fondoMain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cardContainer{
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+    overflow: hidden;
+    width: auto;
+    backdrop-filter: blur(0.15rem);
+    background-color: rgba(255, 255, 255, 0.488);
+    border: .1rem solid rgba(255, 255, 255, 0.18);
+}
+
+.produ1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.produ1Text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.produ2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.produ2Text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+/* MAIN - SERVICIOS */
+
+.gridServicios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "fotografia"
+    "fotoShot"
+    "video"
+    "videoRod";
+}
+
+.fotografia{
+    grid-area: fotografia;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 0px 10px;
+}
+
+.fotoShooting{
+    grid-area: fotoShot;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px 10px 10px;
+}
+
+.fotoShooting img{
+    width: 50%;
+}
+
+.video{
+    grid-area: video;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 0px 10px;
+}
+
+.fotoRodaje{
+    grid-area: videoRod;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px 10px 10px;
+}
+
+.fotoRodaje img{
+    width: 50%;
+}
+
+
+/* MAIN - RENTAL */
+
+.itemsRental{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.camaras{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.camaras img{
+    width: 35%;
+}
+
+.lentes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.lentes img{
+    width: 25%;
+}
+
+.tripodes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.tripodes img{
+    width: 25%;
+}
+
+.iluminacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.iluminacion img{
+    width: 25%;
+}
+
+.accesorios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.accesorios img{
+    width: 25%;
+}
+
+.grip{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.grip img{
+    width: 50%;
+}
+
+/* MAIN - NOSOTROS */
+
+.nosotrosGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "bienvenidos"
+    "santi"
+    "cesar";
+    text-align: center;
+}
+
+.bienvenidos{
+    grid-area: bienvenidos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.santi{
+    grid-area: santi;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.santi img{
+    padding: 10px;
+    width: 50%;
+}
+
+.cesar{
+    grid-area: cesar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.cesar img{
+    padding: 10px;
+    width: 50%;
+}
+
+/* MAIN - CONTACTO */
+
+
+.tituloContacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.telefonos{
+    padding: 10px;
+}
+
+.formulario{
+    padding: 10px;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+.linksFooter{
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redesFooter{
+    padding-bottom: 10px;
+}
+
+.copyrightFooter{
+    text-align: center;
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+}
+
+
+@media (min-width: 720px){
+
+    /* NAVEGADOR - MENU */
+    nav{
+        padding: 0rem 1rem;
+    }
+
+    .navBar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "logo menu";
+        }
+
+        .gridLogoNav{
+        grid-area: logo;
+        padding-top: 0.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+    .gridNavBar{
+        grid-area: menu;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2rem;
+    }
+
+
+    /* MAIN - INDEX */
+
+    
+
+    /* MAIN - SERVICIOS */
+
+    .gridServicios{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-areas: 
+        "fotografia video"
+        "fotoShot videoRod";
+    }
+    
+    .fotografia{
+        grid-area: fotografia;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-end;
+        text-align: right;
+        padding: 10px;
+    }
+    
+    .fotoShooting{
+        grid-area: fotoShot;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .fotoShooting img{
+        width: 75%;
+    }
+    
+    .video{
+        grid-area: video;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    
+    .fotoRodaje{
+        grid-area: videoRod;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .fotoRodaje img{
+        width: 75%;
+    }
+
+    /* MAIN - RENTAL */
+
+    .itemsRental{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "camaras lentes"
+        "tripodes iluminacion"
+        "accesorios grip";
+        padding: 10px;
+    }
+    
+    .camaras{
+        grid-area: camaras;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .camaras img{
+        width: 35%;
+    }
+    
+    .lentes{
+        grid-area: lentes;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .lentes img{
+        width: 25%;
+    }
+    
+    .tripodes{
+        grid-area: tripodes;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .tripodes img{
+        width: 25%;
+    }
+    
+    .iluminacion{
+        grid-area: iluminacion;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .iluminacion img{
+        width: 25%;
+    }
+    
+    .accesorios{
+        grid-area: accesorios;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .accesorios img{
+        width: 25%;
+    }
+    
+    .grip{
+        grid-area: grip;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .grip img{
+        width: 50%;
+    }
+
+    /* MAIN - NOSOTROS */
+
+    /* MAIN - CONTACTO */
+
+    .gridContacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "telefonos formulario";
+    }
+    
+    .telefonos{
+        grid-area: telefonos;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align: right;
+        padding: 1rem 1rem;
+    }
+    
+    .formulario{
+        grid-area: formulario;
+        padding: 1rem 1rem;
+    }
+
+    /* FOOTER */
+
+}
+
+@media (min-width: 1024px){
+
+    /* NAVEGADOR - MENU */
+    nav{
+        background-color: rgb(255, 255, 255);
+        padding: 0rem 1rem;
+    }
+
+    .navBar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "logo menu";
+    }
+
+    .gridLogoNav{
+        grid-area: logo;
+        padding-top: 0.7rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .gridNavBar{
+        grid-area: menu;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        }
+
+    /* MAIN - INDEX */
+
+    .produ1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .produ1Text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .produ2{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .produ2Video{
+        width: 560px;
+        height: 315px;
+    }
+
+    .produ2Text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: right;
+        padding: 10px;
+    }
+
+    /* MAIN - SERVICIOS */
+
+    /* MAIN - RENTAL */
+
+    .itemsRental{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "camaras lentes tripodes"
+        "iluminacion accesorios grip";
+        padding: 10px;
+    }
+
+    .camaras img{
+        width: 50%;
+    }
+
+    .lentes img{
+        width: 50%;
+    }
+
+    .tripodes img{
+        width: 50%;
+    }
+
+    .accesorios img{
+        width: 50%;
+    }
+
+    .iluminacion img{
+        width: 50%;
+    }
+
+    .grip img{
+        width: 50%;
+    }
+
+    /* MAIN - NOSOTROS */
+
+    .nosotrosGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas: "bienvenidos bienvenidos"
+        "santi cesar";
+        text-align: center;
+    }
+
+    /* MAIN - CONTACTO */
+
+    /* FOOTER */
+    footer{
+        background-color: rgb(255, 255, 255);
+    }
+    
+    footer h3{
+            padding-left: 10px;
+            padding-right: 10px;  
+    }
+
+    .gridFooter{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: 
+        "links redes";
+    }
+
+    .linksFooter{
+        grid-area: links;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .redesFooter{
+        grid-area: redes;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    
+}
