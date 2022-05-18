@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/style.css">
     <title>Home - SM</title>
 </head>
@@ -11,30 +12,65 @@
 <body>
     
     <header>
-        <nav class="navBar">
-            <div class="gridLogoNav">
-                <img class="logoNav" src="./img/logoNav.png" alt="Logo SM Rental Audiovisual">
-            </div>
-            <ul>
-                <div class="gridNavBar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="./secciones/servicios.html">Servicios</a></li>
-                    <li><a href="./secciones/rental.html">Rental</a></li>
-                    <li><a href="./secciones/nosotros.html">Nosotros</a></li>
-                    <li><a href="./secciones/contacto.html">Contacto</a></li>
+        <nav class="navbar navbar-expand-md bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="logoNav" src="./img/logoNav.png" alt="Logo SM RENTAL AUDIOVISUAL"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav fs-4">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./secciones/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./secciones/rental.html">Rental</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./secciones/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-            </ul>
+            </div>
         </nav>
     </header>
 
     <main>
+        
+        
+        
         <section class="cardContainer">
+            
             <div>
                 <h1>Producciones recientes</h1>
             </div>
             <div class="produ1">
-                <div class="produ1Video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XyZXHhYOiFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="slidesProduX" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/XyZXHhYOiFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/HwDuCDT4v-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/bbKL6tWI49M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#slidesProduX" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#slidesProduX" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
                 <div class="produ1Text">
                     <h2>Breve descripción de producción X</h2>
@@ -42,17 +78,35 @@
                 </div>
             </div>
             <div class="produ2">
-                <div class="produ2Video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XyZXHhYOiFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="slidesProdu2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner w-auto p-3">
+                        <div class="carousel-item active">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/XyZXHhYOiFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/HwDuCDT4v-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/bbKL6tWI49M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#slidesProdu2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#slidesProdu2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
                 <div class="produ2Text">
-                    <h2>Breve descripción de producción X</h2>
+                    <h2>Breve descripción de producción Y</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam possimus sint ut repudiandae quaerat impedit, hic nostrum autem laboriosam neque quod porro beatae at perferendis sed recusandae delectus fugiat.</p>
+                    </div>
                 </div>
-            </div>
-
-
         </section>
+
+
     </main>
 
     <footer>
@@ -63,10 +117,10 @@
                 <h3><a href="">FAQ's</a></h3>
             </div>
             <div class="redesFooter">
-                <img src="./img/logoFacebook.png" alt="Logo logoFacebook">
-                <img src="./img/logoInstagram.png" alt="Logo Instagram">
-                <img src="./img/logoYoutube.png" alt="Logo Youtube">
-                <img src="./img/logoVimeo.png" alt="Logo Vimeo">
+                <a href=""><img src="./img/logoFacebook.png" alt="Logo logoFacebook"></a>
+                <a href=""><img src="./img/logoInstagram.png" alt="Logo Instagram"></a>
+                <a href=""><img src="./img/logoYoutube.png" alt="Logo Youtube"></a>
+                <a href=""><img src="./img/logoVimeo.png" alt="Logo Vimeo"></a>
             </div>
         </div>
         <div class="copyrightFooter">
@@ -74,5 +128,7 @@
         </div>        
     </footer>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
