@@ -50,6 +50,13 @@ nav{
 
 }
 
+nav a:hover {
+    background-color: grey;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
 .logoNav{
     width: 100px;
 }
@@ -347,6 +354,18 @@ footer{
 footer img{
     width: 30px;
     height: 30px;
+}
+
+.gridFooter a{
+    color: black;
+    padding: 0.5rem 1rem;
+}
+
+.gridFooter a:hover {
+    background-color: grey;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
 
 
