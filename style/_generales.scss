@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    min-height: 100vh;
+}
+
+body{
+    background-image: url(../img/fondoMain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li{
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+/* NAVEGADOR - MENU */
+nav{
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+    a:hover {
+        background-color: grey;
+        -webkit-transition: background-color 1000ms linear;
+        -ms-transition: background-color 1000ms linear;
+        transition: background-color 1000ms linear;
+    }
+}
+
+.logoNav{
+    width: 100px;
+}
+
+
+
+/* FOOTER */
+footer{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.linksFooter{
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redesFooter{
+    padding-bottom: 10px;
+}
+
+.copyrightFooter{
+    text-align: center;
+}
+
+.gridFooter a{
+    color: black;
+    padding: 0.5rem 1rem;
+    &:hover {
+        background-color: grey;
+        -webkit-transition: background-color 1000ms linear;
+        -ms-transition: background-color 1000ms linear;
+        transition: background-color 1000ms linear;
+    }
+}
+
+@media (min-width: 720px){
+
+    /* NAVEGADOR - MENU */
+    nav{
+        padding: 0rem 1rem;
+    }
+}
+
+@media (min-width: 1024px){
+
+    /* NAVEGADOR - MENU */
+    nav{
+        background-color: rgb(255, 255, 255);
+        padding: 0rem 1rem;
+    }
+
+    
+    /* FOOTER */
+    footer{
+        background-color: rgb(255, 255, 255);
+        h3{
+            padding-left: 10px;
+            padding-right: 10px;  
+        }
+    }
+
+    .gridFooter{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: 
+        "links redes";
+    }
+
+    .linksFooter{
+        grid-area: links;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .redesFooter{
+        grid-area: redes;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}

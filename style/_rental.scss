@@ -1,0 +1,209 @@
+/* MAIN - RENTAL */
+
+.itemsRental{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.camaras{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    img{
+        width: 35%;
+    }
+}
+
+.lentes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    img{
+        width: 25%;
+    }
+}
+
+.tripodes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    img{
+        width: 25%;
+    }
+}
+
+.iluminacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    img{
+        width: 25%;
+    }
+}
+
+.accesorios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    img{
+        width: 25%;
+    }
+}
+
+.grip{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    img{
+        width: 50%;
+    }
+}
+
+@media (min-width: 720px){
+
+
+    /* MAIN - RENTAL */
+
+    .itemsRental{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "camaras lentes"
+        "tripodes iluminacion"
+        "accesorios grip";
+        padding: 10px;
+    }
+    
+    .camaras{
+        grid-area: camaras;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        img{
+            width: 35%;
+        }
+    }
+    
+    .lentes{
+        grid-area: lentes;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        img{
+            width: 25%;
+        }
+    }
+    
+    .tripodes{
+        grid-area: tripodes;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        img{
+            width: 25%;
+        }
+    }
+    
+    .iluminacion{
+        grid-area: iluminacion;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        img{
+            width: 25%;
+        }
+    }
+    
+    .accesorios{
+        grid-area: accesorios;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        img{
+            width: 25%;
+        }
+    }
+    
+    .grip{
+        grid-area: grip;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        img{
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+
+    /* MAIN - RENTAL */
+
+    .itemsRental{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "camaras lentes tripodes"
+        "iluminacion accesorios grip";
+        padding: 10px;
+    }
+
+    .camaras img{
+        width: 50%;
+    }
+
+    .lentes img{
+        width: 50%;
+    }
+
+    .tripodes img{
+        width: 50%;
+    }
+
+    .accesorios img{
+        width: 50%;
+    }
+
+    .iluminacion img{
+        width: 50%;
+    }
+
+    .grip img{
+        width: 50%;
+    }
+
+    .camaras, .lentes, .tripodes, .iluminacion, .accesorios, .grip {
+        transition: all .2s ease-in-out; 
+    }
+
+    .camaras:hover, .lentes:hover, .tripodes:hover, .iluminacion:hover, .accesorios:hover, .grip:hover {
+        transform: scale(1.3);
+    }
+}

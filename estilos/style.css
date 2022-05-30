@@ -1,757 +1,1011 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+main {
+  min-height: 100vh;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+body {
+  background-image: url(../img/fondoMain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
 }
 
-ul li{
-    list-style-type: none;
-    padding-left: 10px;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li {
+  list-style-type: none;
+  padding-left: 10px;
 }
 
 /* NAVEGADOR - MENU */
-nav{
-    background-color: rgb(255, 255, 255);
-    padding: 0.5rem 1rem;
-}
-
-.navBar{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "logo menu";
-    }
-
-    .gridLogoNav{
-    grid-area: logo;
-    padding-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    }
-
-    .gridNavBar{
-    grid-area: menu;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
+nav {
+  background-color: white;
+  padding: 0.5rem 1rem;
 }
 
 nav a:hover {
-    background-color: grey;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
+  background-color: grey;
+  -webkit-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
-.logoNav{
-    width: 100px;
-}
-
-/* MAIN - INDEX */
-main{
-    min-height: 100vh;
-}
-
-body{
-    background-image: url(../img/fondoMain.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.cardContainer{
-    border-radius: 1rem;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1.5rem;
-    overflow: hidden;
-    width: auto;
-    backdrop-filter: blur(0.15rem);
-    background-color: rgba(255, 255, 255, 0.488);
-    border: .1rem solid rgba(255, 255, 255, 0.18);
-}
-
-.produ1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.produ1Text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-}
-
-.produ2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.produ2Text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-}
-
-/* MAIN - SERVICIOS */
-
-.gridServicios{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "fotografia"
-    "fotoShot"
-    "video"
-    "videoRod";
-}
-
-.fotografia{
-    grid-area: fotografia;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 10px 0px 10px;
-}
-
-.fotoShooting{
-    grid-area: fotoShot;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 10px 10px 10px;
-}
-
-.fotoShooting img{
-    width: 50%;
-}
-
-.video{
-    grid-area: video;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 10px 0px 10px;
-}
-
-.fotoRodaje{
-    grid-area: videoRod;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 10px 10px 10px;
-}
-
-.fotoRodaje img{
-    width: 50%;
-}
-
-
-/* MAIN - RENTAL */
-
-.itemsRental{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.camaras{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.camaras img{
-    width: 35%;
-}
-
-.lentes{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.lentes img{
-    width: 25%;
-}
-
-.tripodes{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.tripodes img{
-    width: 25%;
-}
-
-.iluminacion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.iluminacion img{
-    width: 25%;
-}
-
-.accesorios{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.accesorios img{
-    width: 25%;
-}
-
-.grip{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.grip img{
-    width: 50%;
-}
-
-/* MAIN - NOSOTROS */
-
-.nosotrosGrid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr;
-    grid-template-areas: "bienvenidos"
-    "santi"
-    "cesar";
-    text-align: center;
-}
-
-.bienvenidos{
-    grid-area: bienvenidos;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
-
-.santi{
-    grid-area: santi;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
-
-.santi img{
-    padding: 10px;
-    width: 50%;
-}
-
-.cesar{
-    grid-area: cesar;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
-
-.cesar img{
-    padding: 10px;
-    width: 50%;
-}
-
-/* MAIN - CONTACTO */
-
-
-.tituloContacto{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.telefonos{
-    padding: 10px;
-}
-
-.formulario{
-    padding: 10px;
+.logoNav {
+  width: 100px;
 }
 
 /* FOOTER */
-footer{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 1rem;
+footer {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 1rem;
 }
 
-.linksFooter{
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer img {
+  width: 30px;
+  height: 30px;
 }
 
-.redesFooter{
-    padding-bottom: 10px;
+.linksFooter {
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.copyrightFooter{
-    text-align: center;
+.redesFooter {
+  padding-bottom: 10px;
 }
 
-footer img{
-    width: 30px;
-    height: 30px;
+.copyrightFooter {
+  text-align: center;
 }
 
-.gridFooter a{
-    color: black;
-    padding: 0.5rem 1rem;
+.gridFooter a {
+  color: black;
+  padding: 0.5rem 1rem;
 }
 
 .gridFooter a:hover {
-    background-color: grey;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
+  background-color: grey;
+  -webkit-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
-
-@media (min-width: 720px){
-
-    /* NAVEGADOR - MENU */
-    nav{
-        padding: 0rem 1rem;
-    }
-
-    .navBar{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "logo menu";
-        }
-
-        .gridLogoNav{
-        grid-area: logo;
-        padding-top: 0.7rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-
-    .gridNavBar{
-        grid-area: menu;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 2rem;
-    }
-
-
-    /* MAIN - INDEX */
-
-    
-
-    /* MAIN - SERVICIOS */
-
-    .gridServicios{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
-        grid-template-areas: 
-        "fotografia video"
-        "fotoShot videoRod";
-    }
-    
-    .fotografia{
-        grid-area: fotografia;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: flex-end;
-        text-align: right;
-        padding: 10px;
-    }
-    
-    .fotoShooting{
-        grid-area: fotoShot;
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-    }
-    
-    .fotoShooting img{
-        width: 75%;
-    }
-    
-    .video{
-        grid-area: video;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: flex-start;
-        padding: 10px;
-    }
-    
-    .fotoRodaje{
-        grid-area: videoRod;
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-    }
-    
-    .fotoRodaje img{
-        width: 75%;
-    }
-
-    /* MAIN - RENTAL */
-
-    .itemsRental{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "camaras lentes"
-        "tripodes iluminacion"
-        "accesorios grip";
-        padding: 10px;
-    }
-    
-    .camaras{
-        grid-area: camaras;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
-    
-    .camaras img{
-        width: 35%;
-    }
-    
-    .lentes{
-        grid-area: lentes;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
-    
-    .lentes img{
-        width: 25%;
-    }
-    
-    .tripodes{
-        grid-area: tripodes;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
-    
-    .tripodes img{
-        width: 25%;
-    }
-    
-    .iluminacion{
-        grid-area: iluminacion;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
-    
-    .iluminacion img{
-        width: 25%;
-    }
-    
-    .accesorios{
-        grid-area: accesorios;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
-    
-    .accesorios img{
-        width: 25%;
-    }
-    
-    .grip{
-        grid-area: grip;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
-    
-    .grip img{
-        width: 50%;
-    }
-
-    /* MAIN - NOSOTROS */
-
-    /* MAIN - CONTACTO */
-
-    .gridContacto{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "telefonos formulario";
-    }
-    
-    .telefonos{
-        grid-area: telefonos;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        text-align: right;
-        padding: 1rem 1rem;
-    }
-    
-    .formulario{
-        grid-area: formulario;
-        padding: 1rem 1rem;
-    }
-
-    /* FOOTER */
-
+@media (min-width: 720px) {
+  /* NAVEGADOR - MENU */
+  nav {
+    padding: 0rem 1rem;
+  }
 }
 
-@media (min-width: 1024px){
-
-    /* NAVEGADOR - MENU */
-    nav{
-        background-color: rgb(255, 255, 255);
-        padding: 0rem 1rem;
-    }
-
-    .navBar{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "logo menu";
-    }
-
-    .gridLogoNav{
-        grid-area: logo;
-        padding-top: 0.7rem;
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .gridNavBar{
-        grid-area: menu;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        }
-
-    /* MAIN - INDEX */
-
-    .produ1{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .produ1Text{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 10px;
-        text-align: left;
-    }
-    
-    .produ2{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
-    
-    .produ2Video{
-        width: 560px;
-        height: 315px;
-    }
-
-    .produ2Text{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        text-align: right;
-        padding: 10px;
-    }
-
-    /* MAIN - SERVICIOS */
-
-    .fotoShooting, .fotoRodaje {
-        transition: all .2s ease-in-out; 
-    }
-
-    .fotoShooting:hover, .fotoRodaje:hover {
-        transform: scale(1.3);
-    }
-
-    /* MAIN - RENTAL */
-
-    .itemsRental{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "camaras lentes tripodes"
-        "iluminacion accesorios grip";
-        padding: 10px;
-    }
-
-    .camaras img{
-        width: 50%;
-    }
-
-    .lentes img{
-        width: 50%;
-    }
-
-    .tripodes img{
-        width: 50%;
-    }
-
-    .accesorios img{
-        width: 50%;
-    }
-
-    .iluminacion img{
-        width: 50%;
-    }
-
-    .grip img{
-        width: 50%;
-    }
-
-    .camaras, .lentes, .tripodes, .iluminacion, .accesorios, .grip {
-        transition: all .2s ease-in-out; 
-    }
-
-    .camaras:hover, .lentes:hover, .tripodes:hover, .iluminacion:hover, .accesorios:hover, .grip:hover {
-        transform: scale(1.3);
-    }
-
-    /* MAIN - NOSOTROS */
-
-    .nosotrosGrid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 0.5fr;
-        grid-template-areas: "bienvenidos bienvenidos"
-        "santi cesar";
-        text-align: center;
-    }
-
-    .santiFoto, .cesarFoto {
-        transition: all .2s ease-in-out; 
-    }
-
-    .santiFoto:hover, .cesarFoto:hover {
-        transform: scale(1.3);
-    }
-
-    /* MAIN - CONTACTO */
-
-    /* FOOTER */
-    footer{
-        background-color: rgb(255, 255, 255);
-    }
-    
-    footer h3{
-            padding-left: 10px;
-            padding-right: 10px;  
-    }
-
-    .gridFooter{
-        display: grid;
+@media (min-width: 1024px) {
+  /* NAVEGADOR - MENU */
+  nav {
+    background-color: white;
+    padding: 0rem 1rem;
+  }
+  /* FOOTER */
+  footer {
+    background-color: white;
+  }
+  footer h3 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .gridFooter {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr;
         grid-template-columns: 2fr 2fr;
-        grid-template-areas: 
-        "links redes";
-    }
+        grid-template-areas: "links redes";
+  }
+  .linksFooter {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: links;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .redesFooter {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: redes;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
 
-    .linksFooter{
-        grid-area: links;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+/* MAIN - INDEX */
+.cardContainer {
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5rem;
+  overflow: hidden;
+  width: auto;
+  -webkit-backdrop-filter: blur(0.15rem);
+          backdrop-filter: blur(0.15rem);
+  background-color: rgba(255, 255, 255, 0.488);
+  border: 0.1rem solid rgba(255, 255, 255, 0.18);
+}
 
-    .redesFooter{
-        grid-area: redes;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+.produ1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
 
-    
+.produ1Text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.produ2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.produ2Text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (min-width: 1024px) {
+  /* MAIN - INDEX */
+  .produ1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .produ1Text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 10px;
+    text-align: left;
+  }
+  .produ2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .produ2Video {
+    width: 560px;
+    height: 315px;
+  }
+  .produ2Text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    text-align: right;
+    padding: 10px;
+  }
+}
+
+/* MAIN - SERVICIOS */
+.gridServicios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "fotografia" "fotoShot" "video" "videoRod";
+}
+
+.fotografia {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: fotografia;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px 0px 10px;
+}
+
+.fotoShooting {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: fotoShot;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 10px 10px 10px;
+}
+
+.fotoShooting img {
+  width: 50%;
+}
+
+.video {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: video;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px 0px 10px;
+}
+
+.fotoRodaje {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: videoRod;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 10px 10px 10px;
+}
+
+.fotoRodaje img {
+  width: 50%;
+}
+
+@media (min-width: 720px) {
+  /* MAIN - SERVICIOS */
+  .gridServicios {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 0.5fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-areas: "fotografia video" "fotoShot videoRod";
+  }
+  .fotografia {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: fotografia;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    text-align: right;
+    padding: 10px;
+  }
+  .fotoShooting {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: fotoShot;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px;
+  }
+  .fotoShooting img {
+    width: 75%;
+  }
+  .video {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: video;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 10px;
+  }
+  .fotoRodaje {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: videoRod;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px;
+  }
+  .fotoRodaje img {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* MAIN - SERVICIOS */
+  .fotoShooting, .fotoRodaje {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  .fotoShooting:hover, .fotoRodaje:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+/* MAIN - RENTAL */
+.itemsRental {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.camaras {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.camaras img {
+  width: 35%;
+}
+
+.lentes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.lentes img {
+  width: 25%;
+}
+
+.tripodes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.tripodes img {
+  width: 25%;
+}
+
+.iluminacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.iluminacion img {
+  width: 25%;
+}
+
+.accesorios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.accesorios img {
+  width: 25%;
+}
+
+.grip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.grip img {
+  width: 50%;
+}
+
+@media (min-width: 720px) {
+  /* MAIN - RENTAL */
+  .itemsRental {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "camaras lentes" "tripodes iluminacion" "accesorios grip";
+    padding: 10px;
+  }
+  .camaras {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: camaras;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .camaras img {
+    width: 35%;
+  }
+  .lentes {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: lentes;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .lentes img {
+    width: 25%;
+  }
+  .tripodes {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: tripodes;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .tripodes img {
+    width: 25%;
+  }
+  .iluminacion {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: iluminacion;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .iluminacion img {
+    width: 25%;
+  }
+  .accesorios {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: accesorios;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .accesorios img {
+    width: 25%;
+  }
+  .grip {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: grip;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  .grip img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* MAIN - RENTAL */
+  .itemsRental {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "camaras lentes tripodes" "iluminacion accesorios grip";
+    padding: 10px;
+  }
+  .camaras img {
+    width: 50%;
+  }
+  .lentes img {
+    width: 50%;
+  }
+  .tripodes img {
+    width: 50%;
+  }
+  .accesorios img {
+    width: 50%;
+  }
+  .iluminacion img {
+    width: 50%;
+  }
+  .grip img {
+    width: 50%;
+  }
+  .camaras, .lentes, .tripodes, .iluminacion, .accesorios, .grip {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  .camaras:hover, .lentes:hover, .tripodes:hover, .iluminacion:hover, .accesorios:hover, .grip:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+/* MAIN - NOSOTROS */
+.nosotrosGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.5fr 0.5fr 0.5fr;
+      grid-template-rows: 0.5fr 0.5fr 0.5fr;
+      grid-template-areas: "bienvenidos" "santi" "cesar";
+  text-align: center;
+}
+
+.bienvenidos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: bienvenidos;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.santi {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: santi;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.santi img {
+  padding: 10px;
+  width: 50%;
+}
+
+.cesar {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: cesar;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.cesar img {
+  padding: 10px;
+  width: 50%;
+}
+
+@media (min-width: 1024px) {
+  /* MAIN - NOSOTROS */
+  .nosotrosGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas: "bienvenidos bienvenidos" "santi cesar";
+    text-align: center;
+  }
+  .santiFoto, .cesarFoto {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  .santiFoto:hover, .cesarFoto:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+/* MAIN - CONTACTO */
+.tituloContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.telefonos {
+  padding: 10px;
+}
+
+.formulario {
+  padding: 10px;
+}
+
+@media (min-width: 720px) {
+  /* MAIN - CONTACTO */
+  .gridContacto {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "telefonos formulario";
+  }
+  .telefonos {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: telefonos;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    text-align: right;
+    padding: 1rem 1rem;
+  }
+  .formulario {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: formulario;
+    padding: 1rem 1rem;
+  }
 }

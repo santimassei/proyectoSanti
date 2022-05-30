@@ -1,0 +1,68 @@
+/* MAIN - NOSOTROS */
+
+.nosotrosGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "bienvenidos"
+    "santi"
+    "cesar";
+    text-align: center;
+}
+
+.bienvenidos{
+    grid-area: bienvenidos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.santi{
+    grid-area: santi;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    img{
+        padding: 10px;
+        width: 50%;
+    }
+}
+
+.cesar{
+    grid-area: cesar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    img{
+        padding: 10px;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px){
+
+
+    /* MAIN - NOSOTROS */
+
+    .nosotrosGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas: "bienvenidos bienvenidos"
+        "santi cesar";
+        text-align: center;
+    }
+
+    .santiFoto, .cesarFoto {
+        transition: all .2s ease-in-out; 
+    }
+
+    .santiFoto:hover, .cesarFoto:hover {
+        transform: scale(1.3);
+    }
+
+    
+}

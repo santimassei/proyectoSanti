@@ -1,0 +1,44 @@
+/* MAIN - CONTACTO */
+
+
+.tituloContacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.telefonos{
+    padding: 10px;
+}
+
+.formulario{
+    padding: 10px;
+}
+
+
+@media (min-width: 720px){
+
+    /* MAIN - CONTACTO */
+
+    .gridContacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "telefonos formulario";
+    }
+    
+    .telefonos{
+        grid-area: telefonos;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        text-align: right;
+        padding: 1rem 1rem;
+    }
+    
+    .formulario{
+        grid-area: formulario;
+        padding: 1rem 1rem;
+    }
+
+}
