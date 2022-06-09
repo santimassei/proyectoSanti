@@ -26,7 +26,7 @@
     align-items: center;
     padding: 10px;
     img{
-        width: 25%;
+        width: 35%;
     }
 }
 
@@ -37,7 +37,7 @@
     align-items: center;
     padding: 10px;
     img{
-        width: 25%;
+        width: 35%;
     }
 }
 
@@ -48,7 +48,7 @@
     align-items: center;
     padding: 10px;
     img{
-        width: 25%;
+        width: 35%;
     }
 }
 
@@ -59,7 +59,7 @@
     align-items: center;
     padding: 10px;
     img{
-        width: 25%;
+        width: 35%;
     }
 }
 
@@ -97,7 +97,7 @@
         align-items: center;
         padding: 10px;
         img{
-            width: 35%;
+            width: 50%;
         }
     }
     
@@ -109,7 +109,7 @@
         align-items: center;
         padding: 10px;
         img{
-            width: 25%;
+            width: 50%;
         }
     }
     
@@ -121,7 +121,7 @@
         align-items: center;
         padding: 10px;
         img{
-            width: 25%;
+            width: 50%;
         }
     }
     
@@ -133,7 +133,7 @@
         align-items: center;
         padding: 10px;
         img{
-            width: 25%;
+            width: 50%;
         }
     }
     
@@ -145,7 +145,7 @@
         align-items: center;
         padding: 10px;
         img{
-            width: 25%;
+            width: 50%;
         }
     }
     
@@ -176,27 +176,27 @@
     }
 
     .camaras img{
-        width: 50%;
+        width: 75%;
     }
 
     .lentes img{
-        width: 50%;
+        width: 75%;
     }
 
     .tripodes img{
-        width: 50%;
+        width: 75%;
     }
 
     .accesorios img{
-        width: 50%;
+        width: 75%;
     }
 
     .iluminacion img{
-        width: 50%;
+        width: 75%;
     }
 
     .grip img{
-        width: 50%;
+        width: 75%;
     }
 
     .camaras, .lentes, .tripodes, .iluminacion, .accesorios, .grip {
@@ -204,6 +204,6 @@
     }
 
     .camaras:hover, .lentes:hover, .tripodes:hover, .iluminacion:hover, .accesorios:hover, .grip:hover {
-        transform: scale(1.3);
+        transform: scale(1.2);
     }
 }
