@@ -162,18 +162,6 @@ footer img {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .btn--face {
-    background-color: #3b5998;
-  }
-  .btn--insta {
-    background-color: #dd2a7b;
-  }
-  .btn--you {
-    background-color: #c4302b;
-  }
-  .btn--vim {
-    background-color: #86c9ef;
-  }
 }
 
 /* MAIN - INDEX */
@@ -536,8 +524,8 @@ footer img {
     transition: all .2s ease-in-out;
   }
   .fotoShooting:hover, .fotoRodaje:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
@@ -961,8 +949,8 @@ footer img {
     transition: all .2s ease-in-out;
   }
   .santiFoto:hover, .cesarFoto:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
 }
 

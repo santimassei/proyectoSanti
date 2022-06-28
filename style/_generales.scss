@@ -135,16 +135,5 @@ footer{
         justify-content: space-evenly;
     }
 
-    $redes: (
-        face:#3b5998,
-        insta: #dd2a7b,
-        you: #c4302b,
-        vim: #86c9ef,
-    );
 
-    @each $red, $color in $redes {
-        .btn--#{$red}{
-            background-color: $color;
-        }
-    };
 }
