@@ -162,6 +162,18 @@ footer img {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  .btn--face {
+    background-color: #3b5998;
+  }
+  .btn--insta {
+    background-color: #dd2a7b;
+  }
+  .btn--you {
+    background-color: #c4302b;
+  }
+  .btn--vim {
+    background-color: #86c9ef;
+  }
 }
 
 /* MAIN - INDEX */
@@ -586,7 +598,7 @@ footer img {
 }
 
 .lentes img {
-  width: 25%;
+  width: 35%;
 }
 
 .tripodes {
@@ -607,7 +619,7 @@ footer img {
 }
 
 .tripodes img {
-  width: 25%;
+  width: 35%;
 }
 
 .iluminacion {
@@ -628,7 +640,7 @@ footer img {
 }
 
 .iluminacion img {
-  width: 25%;
+  width: 35%;
 }
 
 .accesorios {
@@ -649,7 +661,7 @@ footer img {
 }
 
 .accesorios img {
-  width: 25%;
+  width: 35%;
 }
 
 .grip {
@@ -705,7 +717,7 @@ footer img {
     padding: 10px;
   }
   .camaras img {
-    width: 35%;
+    width: 50%;
   }
   .lentes {
     -ms-grid-row: 1;
@@ -727,7 +739,7 @@ footer img {
     padding: 10px;
   }
   .lentes img {
-    width: 25%;
+    width: 50%;
   }
   .tripodes {
     -ms-grid-row: 2;
@@ -749,7 +761,7 @@ footer img {
     padding: 10px;
   }
   .tripodes img {
-    width: 25%;
+    width: 50%;
   }
   .iluminacion {
     -ms-grid-row: 2;
@@ -771,7 +783,7 @@ footer img {
     padding: 10px;
   }
   .iluminacion img {
-    width: 25%;
+    width: 50%;
   }
   .accesorios {
     -ms-grid-row: 3;
@@ -793,7 +805,7 @@ footer img {
     padding: 10px;
   }
   .accesorios img {
-    width: 25%;
+    width: 50%;
   }
   .grip {
     -ms-grid-row: 3;
@@ -832,30 +844,30 @@ footer img {
     padding: 10px;
   }
   .camaras img {
-    width: 50%;
+    width: 75%;
   }
   .lentes img {
-    width: 50%;
+    width: 75%;
   }
   .tripodes img {
-    width: 50%;
+    width: 75%;
   }
   .accesorios img {
-    width: 50%;
+    width: 75%;
   }
   .iluminacion img {
-    width: 50%;
+    width: 75%;
   }
   .grip img {
-    width: 50%;
+    width: 75%;
   }
   .camaras, .lentes, .tripodes, .iluminacion, .accesorios, .grip {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
   }
   .camaras:hover, .lentes:hover, .tripodes:hover, .iluminacion:hover, .accesorios:hover, .grip:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
